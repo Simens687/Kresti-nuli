@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/light_cher">
+
+
+    <TextView
+        android:id="@+id/cross_win_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Победы X: X_WINS"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/circle_win_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Победы O: O_WINS"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cross_win_tv"/>
+
+    <TextView
+        android:id="@+id/ties_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ничьи: TIES"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circle_win_tv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
